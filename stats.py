@@ -12,3 +12,18 @@ def num_of_characters(text):
         else:
             all_chars[char] = 1
     return all_chars
+
+def sorting(all_words):
+    characters = num_of_characters(all_words)
+    all = []
+    new_dict = {}
+    for char in characters:
+        new_dict = {
+            "char": char,
+            "num": characters[char]
+        }
+        all.append(new_dict)
+    return all
+
+def myFunc(e):
+    return e["num"]
